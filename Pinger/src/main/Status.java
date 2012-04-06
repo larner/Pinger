@@ -6,18 +6,14 @@ import java.net.*;
 // Referenced classes of package main:
 //            Host
 
-public class Status
-{
-
-    public Status()
-    {
-    }
-
+public class Status{
     public static Host[] check()
         throws UnknownHostException, IOException
     {
         int arraySize = 50;
-        File file = new File("C:\\ps\\data.txt");
+        File file = new File("C:\\temp\\data.txt");
+        if (!file.exists()) file.createNewFile();
+        
         FileReader freader = new FileReader(file);
         BufferedReader breader = new BufferedReader(freader);
         Host hostArr[] = new Host[arraySize];
