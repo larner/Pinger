@@ -2,7 +2,6 @@ package main;
 
 import java.io.*;
 import java.net.*;
-import javax.swing.JOptionPane;
 
 // Referenced classes of package main:
 //            Host
@@ -37,7 +36,7 @@ public class Status
             } else
             {
                 hostArr[loop].setStatus("Offline!");
-                JOptionPane.showMessageDialog(null, (new StringBuilder("\u041E\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442 \u0441\u0432\u044F\u0437\u044C \u0441 \u0445\u043E\u0441\u0442\u043E\u043C\n ")).append(hostArr[loop].getIpaddress()).append(" - ").append(hostArr[loop].getDescription()).toString(), "\u041E\u0448\u0438\u0431\u043A\u0430 \u0441\u0432\u044F\u0437\u0438", 0);
+               //JOptionPane.showMessageDialog(null, (new StringBuilder("\u041E\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442 \u0441\u0432\u044F\u0437\u044C \u0441 \u0445\u043E\u0441\u0442\u043E\u043C\n ")).append(hostArr[loop].getIpaddress()).append(" - ").append(hostArr[loop].getDescription()).toString(), "\u041E\u0448\u0438\u0431\u043A\u0430 \u0441\u0432\u044F\u0437\u0438", 0);
             }
         }
 
