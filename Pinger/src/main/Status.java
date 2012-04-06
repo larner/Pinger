@@ -12,7 +12,8 @@ public class Status{
     {
         int arraySize = 50;
         File file = new File("C:\\temp\\data.txt");
-        if (!file.exists()) file.createNewFile();
+        
+        if (!file.exists()) file.createNewFile();    
         
         FileReader freader = new FileReader(file);
         BufferedReader breader = new BufferedReader(freader);
